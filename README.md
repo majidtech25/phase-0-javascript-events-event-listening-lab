@@ -30,9 +30,9 @@ event listener for the `click` event on the `input#button` element in
 Try out the following in the Chrome DevTools console:
 
 ```js
-const input = document.getElementById('button');
-input.addEventListener('click', function() {
-  alert('I was clicked!');
+const input = document.getElementById("button");
+input.addEventListener("click", function () {
+  alert("I was clicked!");
 });
 ```
 
@@ -82,13 +82,13 @@ listeners. With this approach, we would pass the _function name_ as the second
 argument to `addEventListener()` rather than the function itself:
 
 ```js
-const input = document.getElementById('button');
+const input = document.getElementById("button");
 
 function clickAlert() {
-  alert('I was clicked!');
+  alert("I was clicked!");
 }
 
-input.addEventListener('click', clickAlert);
+input.addEventListener("click", clickAlert);
 ```
 
 We could then attach our `clickAlert` to as many elements as we'd like. Just as
